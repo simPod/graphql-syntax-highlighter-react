@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "babel ./src --ignore test --out-dir ./dist",
-    "prepublish": "npm run build",
-    "test": "mocha --compilers js:babel-core/register --reporter spec --full-trace 'src/**/*.test.js'"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -34,8 +33,9 @@
     "react": "^15.3.1 || ^16.0.0"
   },
   "dependencies": {
-    "graphql": "^0.7.0",
-    "prop-types": "^15.6.0"
+    "graphql": "^14.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0"
   },
   "gitHead": "eeeb02fe65b1f1859053a6036e6b6328e2b57a89",
   "homepage": "https://github.com/daniman/graphql-syntax-highlighter-react#readme",
